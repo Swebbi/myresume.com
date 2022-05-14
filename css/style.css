@@ -1,0 +1,343 @@
+{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family:'Poppins', sans-serif;
+ }
+ body{
+     background:white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /* place-items: center center; */
+     min-height: 100vh;
+ }
+ container{
+     position: relative;
+     width: 100%;
+     max-width: 1000px;
+     min-height: 1000px;
+     margin: 50px;
+     background: red;
+     display: grid;
+     grid-template-columns:34% 1fr;
+     box-shadow: 0 35px 55px pink;
+ }
+ 
+ container .left_side{
+     position: relative;
+     background:#333;
+     padding: 40px;
+ }
+ .profile{
+     position: relative; 
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-bottom:0px;
+     border-bottom:1px solid rgb(78, 21, 222);
+ }
+
+ .profile .image{
+     position:relative;
+     width:200px;    
+     height:300px;
+     border-radius: 100px;
+     overflow:hidden;
+ }
+
+ .profile .image img{
+     position:absolute;
+     top:0px;
+     left:0px;
+     width: 100%;
+     height:100%;
+     object-fit: cover;
+ }
+ .profile h2{
+     color: aliceblue;
+     font-size:1.5em;
+     margin-top:20px;
+     text-transform: uppercase;
+     text-align: center;
+     font-weight: 600px;
+     line-height:1.4em;
+ }
+ .profile h2 span{
+     font-size:0.8em;
+     font-weight:300;
+ }
+ .contactInfo{
+     padding-top: 10px; 
+     padding-left: -20px;
+ }
+ .title{
+     color: aliceblue;
+     text-transform: uppercase;
+     font-weight: 600;
+     letter-spacing: 1px;
+     margin-bottom:20px;
+ }
+ /* To target all li */
+ .contactInfo ul{
+     position: relative;
+     margin-left:-40px;
+ }
+ 
+ /* To target all anchor */
+ .contactInfo ul li{
+     position: relative;
+     list-style: none;
+     margin:10px 0;
+     cursor:pointer;
+     
+ }
+ .contactInfo ul li .icon{
+     display: inline-block;
+     width: 30px;
+     font-size: 13px;
+     color:blueviolet;
+ }
+ .contactInfo ul li span{
+     color:aliceblue;
+     font-weight: 300;
+ 
+ }
+ .contactInfo ul li span a{
+     color:aliceblue;
+     font-weight: 300;
+     text-decoration: none;
+ 
+ }
+ .contactInfo .education li{
+     margin-bottom:15px;
+ }
+ .contactInfo.education h5{
+     color:blueviolet;
+     font-weight: 800;
+     letter-spacing:1px;
+ }
+
+ .contactInfo.education h4:nth-child(2){
+     color:white;
+     font-weight: 500;
+ }
+ .contactInfo.education h4{
+     color:whitesmoke;
+     font-weight: 300;
+     letter-spacing:1px;
+ }
+ .contactInfo.language .percent{
+     position: relative;
+     width:100%;
+     height:6px;
+     background:#081928;
+     display: block;
+     margin-top:5px;
+ }
+ .contactInfo.language .percent div{
+     position: absolute;
+     top:0;
+     left:0;
+     height:100%;
+     background:blueviolet;
+ }
+ /* right side styling */
+
+ container .right_side{
+     position: relative;
+     background: orange;
+     padding:40px;
+ }
+ .about{
+     margin-bottom:50px;
+
+ }
+ .about:last-child{
+     margin-bottom:0;  
+ }
+ .title2{
+     color:#003147;
+     text-transform: uppercase;
+     letter-spacing:1px;
+     margin-bottom:10px;
+ }
+ p{
+     color:#333;
+     text-align: justify;
+
+ }
+ .about .box{
+     display: flex;
+     margin:10px 0;
+     flex-direction:row;
+ }
+
+/*To bring the gap of 150px between year and designation as it will take the space of 150px */
+
+ .about .box .year_company{
+     min-width: 150px; 
+ }
+ .about .box .year_company h5{
+     text-transform:uppercase;
+     color:floralwhite;
+     font-weight: 600; 
+ }
+ .about .box .text h4{
+     text-transform: uppercase;
+     color:#2a7da2;
+     font-size:16px;
+
+ }
+ /* 150px taken as the min-width is 150px above */
+ .skills .box{
+     position: relative;
+     width:100%;
+     display:grid;
+     grid-template-columns:300px 1fr;
+     grid-template-rows:20px;
+     /* place-items:center center; */
+     justify-content: center;
+     align-items: center; 
+     margin-top: 20px;
+     
+ }
+
+ .skills .box h4{
+     text-transform: uppercase;
+     color:slateblue;
+     font-weight:500;
+     
+     
+ }
+ .skills .box .percent{
+     position: relative;
+     width:100%;
+     height:6px;
+     background:white;
+     
+     
+ }
+ .skills .box .percent div{
+     position: absolute;
+     top: 0;
+     left:0;
+     height:100%;
+     background:#03a9f4;
+     line-height: 10px;
+ }
+ .interest ul{
+     display: grid;
+     grid-template-columns:repeat(2, 1fr);
+ }
+
+ .interest ul li{
+     list-style:none;
+     color:#333;
+     font-weight: 500;
+     margin-left:-10px;
+     min-width:200px;
+     margin-top:10px;
+     font-size:13px;
+ }
+ 
+ .interest ul li .fa-solid{
+     color:#03a9f4;
+     font-size:13px;
+     width:20px;
+     margin-right:5px;
+ }
+  /* recently developed styling */
+
+  .project ul{
+     display: grid;
+     grid-template-columns:repeat(3, 1fr);
+     grid-template-rows:40px;
+ }
+
+ .project ul li{
+     list-style:none;
+     color:#333;
+     font-weight: 500;
+     margin-left:-10px;
+     min-width:200px;
+     margin-top:10px;
+ 
+ }
+ 
+ .project ul li .fa-solid{
+     color:#03a9f4;
+     font-size:13px;
+     width:20px;
+     margin-right:5px;
+ }
+ 
+ .project ul li a{
+     color:#333;
+     font-size:13px;
+     width:20px;
+     min-width:200px;
+     margin-right:5px;
+     font-weight:500;
+     text-decoration:none;
+ }
+
+ /* media query to make the screen responsive in different size screen */
+
+ @media only screen and (max-width:1100px) {
+     .contactInfo ul {
+position: relative;
+margin-left: -42px;
+}
+ }
+
+
+
+ @media only screen and (max-width:1000px) {
+     .contactInfo ul {
+position: relative;
+margin-left: -47px;
+}
+}     
+
+@media only screen and (max-width:900px) {
+
+container {
+display: grid;
+grid-template-columns: 38% 1fr;        
+
+ }
+}
+
+@media only screen and (max-width:800px) {
+
+container {
+display: grid;
+grid-template-columns: 42% 1fr;        
+
+     }
+ }
+/* responsive ipad */
+ @media only screen and (max-width:768px) {
+     container {
+display: grid;
+grid-template-columns: 44% 1fr;
+}     
+ }
+
+/* responsive mobile */
+
+@media only screen and (max-width:500px) {
+     container {
+display: grid;
+grid-template-columns: 70% 1fr;
+}     
+ }
+
+
+ @media only screen and (max-width:414px) {
+     container {
+display: grid;
+grid-template-columns: 85% 1fr;
+}     
+ }
